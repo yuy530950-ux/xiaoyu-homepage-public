@@ -1,0 +1,287 @@
+{
+  "asOf": "2026-09-30",
+  "scope": "公开选取的真实笔记双链",
+  "nodes": [
+    {
+      "id": "home",
+      "label": "FishFlow 首页",
+      "group": "hub",
+      "x": 450,
+      "y": 300
+    },
+    {
+      "id": "knowledge",
+      "label": "知识地图",
+      "group": "hub",
+      "x": 600,
+      "y": 220
+    },
+    {
+      "id": "reading",
+      "label": "阅读记录",
+      "group": "reading",
+      "x": 270,
+      "y": 250
+    },
+    {
+      "id": "training",
+      "label": "训练与恢复",
+      "group": "practice",
+      "x": 720,
+      "y": 460
+    },
+    {
+      "id": "media",
+      "label": "自媒体项目",
+      "group": "practice",
+      "x": 215,
+      "y": 455
+    },
+    {
+      "id": "deliberate",
+      "label": "刻意练习",
+      "group": "reading",
+      "x": 120,
+      "y": 135
+    },
+    {
+      "id": "pyramid",
+      "label": "金字塔原理",
+      "group": "reading",
+      "x": 90,
+      "y": 295
+    },
+    {
+      "id": "cognition",
+      "label": "认知天性",
+      "group": "reading",
+      "x": 275,
+      "y": 80
+    },
+    {
+      "id": "peaks",
+      "label": "重返巅峰",
+      "group": "reading",
+      "x": 480,
+      "y": 495
+    },
+    {
+      "id": "threebooks",
+      "label": "三书调用图",
+      "group": "method",
+      "x": 420,
+      "y": 135
+    },
+    {
+      "id": "practice",
+      "label": "高质量练习",
+      "group": "method",
+      "x": 750,
+      "y": 125
+    },
+    {
+      "id": "active",
+      "label": "主动学习",
+      "group": "method",
+      "x": 580,
+      "y": 75
+    },
+    {
+      "id": "delay",
+      "label": "延迟验证",
+      "group": "method",
+      "x": 825,
+      "y": 270
+    },
+    {
+      "id": "representation",
+      "label": "心理表征",
+      "group": "method",
+      "x": 760,
+      "y": 345
+    },
+    {
+      "id": "protocol",
+      "label": "阅读沉淀",
+      "group": "method",
+      "x": 85,
+      "y": 435
+    },
+    {
+      "id": "english",
+      "label": "English Seeds",
+      "group": "practice",
+      "x": 390,
+      "y": 405
+    },
+    {
+      "id": "ai",
+      "label": "AI 协作",
+      "group": "practice",
+      "x": 85,
+      "y": 540
+    }
+  ],
+  "edges": [
+    {
+      "source": "active",
+      "target": "delay"
+    },
+    {
+      "source": "active",
+      "target": "knowledge"
+    },
+    {
+      "source": "active",
+      "target": "practice"
+    },
+    {
+      "source": "active",
+      "target": "representation"
+    },
+    {
+      "source": "ai",
+      "target": "home"
+    },
+    {
+      "source": "ai",
+      "target": "knowledge"
+    },
+    {
+      "source": "cognition",
+      "target": "practice"
+    },
+    {
+      "source": "cognition",
+      "target": "pyramid"
+    },
+    {
+      "source": "cognition",
+      "target": "reading"
+    },
+    {
+      "source": "cognition",
+      "target": "representation"
+    },
+    {
+      "source": "cognition",
+      "target": "threebooks"
+    },
+    {
+      "source": "delay",
+      "target": "deliberate"
+    },
+    {
+      "source": "delay",
+      "target": "knowledge"
+    },
+    {
+      "source": "delay",
+      "target": "practice"
+    },
+    {
+      "source": "delay",
+      "target": "representation"
+    },
+    {
+      "source": "deliberate",
+      "target": "practice"
+    },
+    {
+      "source": "deliberate",
+      "target": "pyramid"
+    },
+    {
+      "source": "deliberate",
+      "target": "reading"
+    },
+    {
+      "source": "deliberate",
+      "target": "representation"
+    },
+    {
+      "source": "deliberate",
+      "target": "threebooks"
+    },
+    {
+      "source": "english",
+      "target": "home"
+    },
+    {
+      "source": "english",
+      "target": "knowledge"
+    },
+    {
+      "source": "english",
+      "target": "representation"
+    },
+    {
+      "source": "home",
+      "target": "knowledge"
+    },
+    {
+      "source": "home",
+      "target": "media"
+    },
+    {
+      "source": "home",
+      "target": "reading"
+    },
+    {
+      "source": "home",
+      "target": "training"
+    },
+    {
+      "source": "knowledge",
+      "target": "practice"
+    },
+    {
+      "source": "knowledge",
+      "target": "protocol"
+    },
+    {
+      "source": "knowledge",
+      "target": "reading"
+    },
+    {
+      "source": "knowledge",
+      "target": "representation"
+    },
+    {
+      "source": "knowledge",
+      "target": "threebooks"
+    },
+    {
+      "source": "peaks",
+      "target": "reading"
+    },
+    {
+      "source": "practice",
+      "target": "representation"
+    },
+    {
+      "source": "practice",
+      "target": "threebooks"
+    },
+    {
+      "source": "pyramid",
+      "target": "reading"
+    },
+    {
+      "source": "pyramid",
+      "target": "representation"
+    },
+    {
+      "source": "pyramid",
+      "target": "threebooks"
+    },
+    {
+      "source": "reading",
+      "target": "threebooks"
+    },
+    {
+      "source": "representation",
+      "target": "threebooks"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 610" role="img" aria-labelledby="graph-title graph-description">
+<title id="graph-title">FishFlow 公开笔记关系图</title>
+<desc id="graph-description">从真实笔记双链中选取的首页、阅读、知识与实践之间的关系。17个节点，40条关系。</desc>
+<rect width="900" height="610" rx="20" fill="#152735"/>
+<g stroke="#64808e" stroke-width="1.2" opacity=".5">
+<line x1="580" y1="75" x2="825" y2="270"/>
+<line x1="580" y1="75" x2="600" y2="220"/>
+<line x1="580" y1="75" x2="750" y2="125"/>
+<line x1="580" y1="75" x2="760" y2="345"/>
+<line x1="85" y1="540" x2="450" y2="300"/>
+<line x1="85" y1="540" x2="600" y2="220"/>
+<line x1="275" y1="80" x2="750" y2="125"/>
+<line x1="275" y1="80" x2="90" y2="295"/>
+<line x1="275" y1="80" x2="270" y2="250"/>
+<line x1="275" y1="80" x2="760" y2="345"/>
+<line x1="275" y1="80" x2="420" y2="135"/>
+<line x1="825" y1="270" x2="120" y2="135"/>
+<line x1="825" y1="270" x2="600" y2="220"/>
+<line x1="825" y1="270" x2="750" y2="125"/>
+<line x1="825" y1="270" x2="760" y2="345"/>
+<line x1="120" y1="135" x2="750" y2="125"/>
+<line x1="120" y1="135" x2="90" y2="295"/>
+<line x1="120" y1="135" x2="270" y2="250"/>
+<line x1="120" y1="135" x2="760" y2="345"/>
+<line x1="120" y1="135" x2="420" y2="135"/>
+<line x1="390" y1="405" x2="450" y2="300"/>
+<line x1="390" y1="405" x2="600" y2="220"/>
+<line x1="390" y1="405" x2="760" y2="345"/>
+<line x1="450" y1="300" x2="600" y2="220"/>
+<line x1="450" y1="300" x2="215" y2="455"/>
+<line x1="450" y1="300" x2="270" y2="250"/>
+<line x1="450" y1="300" x2="720" y2="460"/>
+<line x1="600" y1="220" x2="750" y2="125"/>
+<line x1="600" y1="220" x2="85" y2="435"/>
+<line x1="600" y1="220" x2="270" y2="250"/>
+<line x1="600" y1="220" x2="760" y2="345"/>
+<line x1="600" y1="220" x2="420" y2="135"/>
+<line x1="480" y1="495" x2="270" y2="250"/>
+<line x1="750" y1="125" x2="760" y2="345"/>
+<line x1="750" y1="125" x2="420" y2="135"/>
+<line x1="90" y1="295" x2="270" y2="250"/>
+<line x1="90" y1="295" x2="760" y2="345"/>
+<line x1="90" y1="295" x2="420" y2="135"/>
+<line x1="270" y1="250" x2="420" y2="135"/>
+<line x1="760" y1="345" x2="420" y2="135"/>
+</g>
+<g><circle cx="450" cy="300" r="15" fill="#f08a5b"/><text x="450" y="330" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">FishFlow 首页</text></g>
+<g><circle cx="600" cy="220" r="9" fill="#f08a5b"/><text x="600" y="250" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">知识地图</text></g>
+<g><circle cx="270" cy="250" r="6" fill="#80b6c8"/><text x="270" y="280" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">阅读记录</text></g>
+<g><circle cx="720" cy="460" r="6" fill="#a9c59d"/><text x="720" y="490" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">训练与恢复</text></g>
+<g><circle cx="215" cy="455" r="6" fill="#a9c59d"/><text x="215" y="485" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">自媒体项目</text></g>
+<g><circle cx="120" cy="135" r="6" fill="#80b6c8"/><text x="120" y="165" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">刻意练习</text></g>
+<g><circle cx="90" cy="295" r="6" fill="#80b6c8"/><text x="90" y="325" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">金字塔原理</text></g>
+<g><circle cx="275" cy="80" r="6" fill="#80b6c8"/><text x="275" y="110" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">认知天性</text></g>
+<g><circle cx="480" cy="495" r="6" fill="#80b6c8"/><text x="480" y="525" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">重返巅峰</text></g>
+<g><circle cx="420" cy="135" r="6" fill="#bdacd7"/><text x="420" y="165" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">三书调用图</text></g>
+<g><circle cx="750" cy="125" r="6" fill="#bdacd7"/><text x="750" y="155" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">高质量练习</text></g>
+<g><circle cx="580" cy="75" r="6" fill="#bdacd7"/><text x="580" y="105" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">主动学习</text></g>
+<g><circle cx="825" cy="270" r="6" fill="#bdacd7"/><text x="825" y="300" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">延迟验证</text></g>
+<g><circle cx="760" cy="345" r="6" fill="#bdacd7"/><text x="760" y="375" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">心理表征</text></g>
+<g><circle cx="85" cy="435" r="6" fill="#bdacd7"/><text x="85" y="465" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">阅读沉淀</text></g>
+<g><circle cx="390" cy="405" r="6" fill="#a9c59d"/><text x="390" y="435" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">English Seeds</text></g>
+<g><circle cx="85" cy="540" r="6" fill="#a9c59d"/><text x="85" y="570" text-anchor="middle" fill="#e4ecef" font-family="Microsoft YaHei,sans-serif" font-size="17">AI 协作</text></g>
+</svg>
