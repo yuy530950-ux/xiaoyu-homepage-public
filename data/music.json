@@ -1,0 +1,435 @@
+{
+  "defaultTrack": 0,
+  "tracks": [
+    {
+      "id": "rebound",
+      "title": "Rebound",
+      "artist": "Josh Woodward",
+      "mood": "清爽电子流行",
+      "description": "轻快一点，适合随意逛逛。",
+      "src": "./media/rebound.mp3",
+      "sourceUrl": "https://www.joshwoodward.com/song/Rebound",
+      "instrumental": false,
+      "lyrics": [
+        {
+          "time": 4.56,
+          "end": 7.06,
+          "text": "We're snuggled in your sheets"
+        },
+        {
+          "time": 6.5,
+          "end": 10.26,
+          "text": "Like a comfortable cocoon"
+        },
+        {
+          "time": 9.66,
+          "end": 14.5,
+          "text": "I'm cozy in the heat"
+        },
+        {
+          "time": 14.14,
+          "end": 17.7,
+          "text": "But there's a ghost that's in your room"
+        },
+        {
+          "time": 17.1,
+          "end": 20.26,
+          "text": "Your body is beside me"
+        },
+        {
+          "time": 19.84,
+          "end": 25.18,
+          "text": "But your mind is in another world"
+        },
+        {
+          "time": 24.58,
+          "end": 27.64,
+          "text": "Are you trying to even hide it?"
+        },
+        {
+          "time": 28.56,
+          "end": 31.74,
+          "text": "He's still here"
+        },
+        {
+          "time": 33.2,
+          "end": 37.44,
+          "text": "All aboard, you're heading toward"
+        },
+        {
+          "time": 36.84,
+          "end": 40.2,
+          "text": "The next stop down the line"
+        },
+        {
+          "time": 39.6,
+          "end": 43.0,
+          "text": "Will you stay beside me?"
+        },
+        {
+          "time": 44.1,
+          "end": 47.86,
+          "text": "Am I just along for the ride?"
+        },
+        {
+          "time": 48.04,
+          "end": 52.56,
+          "text": "I'm a …, I'm a …, I'm a …, I'm a rebound"
+        },
+        {
+          "time": 56.22,
+          "end": 59.54,
+          "text": "You told me 'bout your past"
+        },
+        {
+          "time": 59.14,
+          "end": 62.8,
+          "text": "How you used to play the drums"
+        },
+        {
+          "time": 63.72,
+          "end": 67.04,
+          "text": "Your allergy to cats"
+        },
+        {
+          "time": 66.64,
+          "end": 70.06,
+          "text": "About your double-jointed thumbs"
+        },
+        {
+          "time": 69.46,
+          "end": 72.78,
+          "text": "But there is something that you left out"
+        },
+        {
+          "time": 72.18,
+          "end": 77.46,
+          "text": "I can read you like an open book"
+        },
+        {
+          "time": 76.86,
+          "end": 80.34,
+          "text": "I wanna close it but I'm stressed out"
+        },
+        {
+          "time": 81.12,
+          "end": 84.3,
+          "text": "He's still here"
+        },
+        {
+          "time": 85.76,
+          "end": 89.92,
+          "text": "All aboard, you're heading toward"
+        },
+        {
+          "time": 89.32,
+          "end": 92.7,
+          "text": "The next stop down the line"
+        },
+        {
+          "time": 92.1,
+          "end": 95.52,
+          "text": "Will you stay beside me?"
+        },
+        {
+          "time": 96.56,
+          "end": 100.36,
+          "text": "Am I just along for the ride?"
+        },
+        {
+          "time": 99.76,
+          "end": 105.02,
+          "text": "I'm a …, I'm a …, I'm a …, I'm a rebound"
+        },
+        {
+          "time": 107.84,
+          "end": 112.26,
+          "text": "No, I don't wanna be your stepping stone"
+        },
+        {
+          "time": 111.66,
+          "end": 116.02,
+          "text": "Or attached like a cast to your broken bone"
+        },
+        {
+          "time": 115.42,
+          "end": 121.92,
+          "text": "I don't want to be like the duct tape that's holding your bumper on"
+        },
+        {
+          "time": 122.82,
+          "end": 127.38,
+          "text": "You catch and release, and I took the bait"
+        },
+        {
+          "time": 126.78,
+          "end": 132.12,
+          "text": "And I just don't know how much longer I can wait"
+        },
+        {
+          "time": 133.34,
+          "end": 137.18,
+          "text": "Would you just stay?"
+        },
+        {
+          "time": 138.68,
+          "end": 142.58,
+          "text": "All aboard, you're heading toward"
+        },
+        {
+          "time": 141.98,
+          "end": 145.4,
+          "text": "The next stop down the line"
+        },
+        {
+          "time": 144.8,
+          "end": 148.28,
+          "text": "Will you stay beside me?"
+        },
+        {
+          "time": 149.3,
+          "end": 153.08,
+          "text": "Am I just along for the ride?"
+        },
+        {
+          "time": 152.48,
+          "end": 157.88,
+          "text": "I'm a …, I'm a …, I'm a …, I'm a rebound"
+        },
+        {
+          "time": 160.12,
+          "end": 165.8,
+          "text": "I'm a …, I'm a …, I'm a …, I'm a rebound"
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "duration": 174.035
+    },
+    {
+      "id": "california",
+      "title": "California Lullabye",
+      "artist": "Josh Woodward",
+      "mood": "暖一点的吉他人声",
+      "description": "带一点夏天与回忆的感觉。",
+      "src": "./media/california-lullabye.mp3",
+      "sourceUrl": "https://www.joshwoodward.com/song/CaliforniaLullabye",
+      "instrumental": false,
+      "lyrics": [
+        {
+          "time": 21.64,
+          "end": 27.1,
+          "text": "The skies are cold and gray"
+        },
+        {
+          "time": 26.5,
+          "end": 32.7,
+          "text": "The storm is on its way"
+        },
+        {
+          "time": 32.1,
+          "end": 40.54,
+          "text": "The flat horizon, leafless trees, there's nothing far as you can see, out here"
+        },
+        {
+          "time": 43.9,
+          "end": 48.54,
+          "text": "You shiver like a waif"
+        },
+        {
+          "time": 48.94,
+          "end": 54.92,
+          "text": "Your snow boot soles are chafed"
+        },
+        {
+          "time": 54.32,
+          "end": 62.72,
+          "text": "You left your heart in paradise, you left it all to roll the dice with me"
+        },
+        {
+          "time": 63.92,
+          "end": 70.5,
+          "text": "And I will shake away the cloudy skies"
+        },
+        {
+          "time": 69.9,
+          "end": 75.52,
+          "text": "With a California lullabye"
+        },
+        {
+          "time": 74.92,
+          "end": 78.44,
+          "text": "And when you're frozen with desire"
+        },
+        {
+          "time": 78.32,
+          "end": 81.24,
+          "text": "We'll put our toes up to the fire"
+        },
+        {
+          "time": 80.64,
+          "end": 84.12,
+          "text": "And I will sing your cares away"
+        },
+        {
+          "time": 88.58,
+          "end": 92.8,
+          "text": "The sand between my toes"
+        },
+        {
+          "time": 93.48,
+          "end": 98.56,
+          "text": "Your hands beneath my clothes"
+        },
+        {
+          "time": 99.2,
+          "end": 106.3,
+          "text": "The memories of golden days, where first we met, and parted ways so soon"
+        },
+        {
+          "time": 110.62,
+          "end": 113.96,
+          "text": "But distance lost its fight"
+        },
+        {
+          "time": 113.86,
+          "end": 119.9,
+          "text": "When you laid down at night"
+        },
+        {
+          "time": 120.64,
+          "end": 129.06,
+          "text": "Without a map, you chose your heart, now we are one, but you're still far from home"
+        },
+        {
+          "time": 128.46,
+          "end": 135.98,
+          "text": "So let me shake away the cloudy skies"
+        },
+        {
+          "time": 135.38,
+          "end": 141.06,
+          "text": "With a California lullabye"
+        },
+        {
+          "time": 140.46,
+          "end": 143.94,
+          "text": "And when you're frozen with desire"
+        },
+        {
+          "time": 143.34,
+          "end": 146.72,
+          "text": "We'll put our toes up to the fire"
+        },
+        {
+          "time": 146.12,
+          "end": 149.44,
+          "text": "And I will sing your cares away"
+        },
+        {
+          "time": 148.84,
+          "end": 154.82,
+          "text": "And when you're frozen with desire"
+        },
+        {
+          "time": 154.22,
+          "end": 157.86,
+          "text": "We'll put our toes up to the fire"
+        },
+        {
+          "time": 157.26,
+          "end": 160.88,
+          "text": "And I will sing your cares away"
+        },
+        {
+          "time": 164.2,
+          "end": 172.32,
+          "text": "I know it feels, like spinning wheels aredigging you much deeper in the snow"
+        },
+        {
+          "time": 177.08,
+          "end": 181.68,
+          "text": "Don't worry, ‘cause the winter thaws, and you will watch the river start to flow"
+        },
+        {
+          "time": 185.7,
+          "end": 192.3,
+          "text": "And in that place, the empty space, will fill you in a warm embrace"
+        },
+        {
+          "time": 191.7,
+          "end": 195.44,
+          "text": "And I will hold you tight until it's home"
+        },
+        {
+          "time": 195.7,
+          "end": 201.24,
+          "text": "I will shake away the cloudy skies"
+        },
+        {
+          "time": 201.58,
+          "end": 203.02,
+          "text": "With a California lullabye"
+        },
+        {
+          "time": 206.41,
+          "end": 209.42,
+          "text": "And when you're frozen with desire"
+        },
+        {
+          "time": 208.82,
+          "end": 212.12,
+          "text": "We'll put our toes up to the fire"
+        },
+        {
+          "time": 211.52,
+          "end": 214.84,
+          "text": "And I will sing your cares away"
+        },
+        {
+          "time": 217.36,
+          "end": 222.82,
+          "text": "Now let me take you back to paradise"
+        },
+        {
+          "time": 222.22,
+          "end": 228.9,
+          "text": "All you gotta do is close your eyes"
+        },
+        {
+          "time": 228.3,
+          "end": 231.2,
+          "text": "And when you're frozen with desire"
+        },
+        {
+          "time": 230.76,
+          "end": 234.08,
+          "text": "We'll put our toes up to the fire"
+        },
+        {
+          "time": 233.48,
+          "end": 237.22,
+          "text": "And I will sing your cares away"
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "duration": 253.793
+    },
+    {
+      "id": "childhood",
+      "title": "Childhood",
+      "artist": "Scott Buckley",
+      "mood": "安静钢琴 · 纯音乐",
+      "description": "慢下来，留一点安静。",
+      "src": "./media/childhood.mp3",
+      "sourceUrl": "https://www.scottbuckley.com.au/library/childhood/",
+      "artistUrl": "https://www.scottbuckley.com.au",
+      "instrumental": true,
+      "lyrics": [],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "duration": 137.079
+    }
+  ]
+}
