@@ -6,7 +6,7 @@ Childhood by Scott Buckley — https://www.scottbuckley.com.au/library/childhood
 
 All three tracks are released under Creative Commons Attribution 4.0 International:
 https://creativecommons.org/licenses/by/4.0/
-Audio files are original full MP3 files, unchanged.
+For smoother web playback, official original MP3 recordings were converted to stereo AAC-LC at approximately 96 kbps in fast-start M4A containers. No trimming or remixing; full song content retained. Original recordings and source checksums are preserved locally.
 Josh Woodward lyrics come from the credited official song pages.
 Lyric line breaks and chorus repetition are arranged for display; synchronization times are estimated from the recordings with speech recognition.
 Song descriptions are editorial choices for this personal homepage, not artist endorsements.

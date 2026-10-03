@@ -71,7 +71,7 @@ function displayTrack(){
  $('music-mood').textContent=t.mood+' · '+t.description;
  $('music-source').textContent=t.title+' — '+t.artist;$('music-source').href=t.sourceUrl;
  $('music-license').textContent=t.license;$('music-license').href=t.licenseUrl;
- document.querySelector('.music-credit span').textContent=t.instrumental?'原音频未改动':'原音频未改动 · 歌词分句与时间整理';
+ document.querySelector('.music-credit span').textContent=t.instrumental?'为网页播放压缩 · 未剪辑':'为网页播放压缩 · 未剪辑 · 歌词分句与时间整理';
  $('lyric-heading').textContent=t.instrumental?'纯音乐':'完整歌词 · 逐句高亮';
  $('instrumental-note').hidden=!t.instrumental;list.hidden=t.instrumental;$('lyrics-note').hidden=t.instrumental;$('music-follow').hidden=t.instrumental;
  list.replaceChildren(...lines.map(line=>{const li=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=line.text;button.setAttribute('aria-label','跳到 '+time(line.time)+'，'+line.text);button.addEventListener('click',()=>seekTo(line.time));li.append(button);return li;}));
@@ -87,7 +87,7 @@ function choose(index){
 buttons.forEach(b=>b.addEventListener('click',()=>choose(Number(b.dataset.track))));
 document.addEventListener('xiaoyu:chapter-media-start',()=>pause('作品开始播放，音乐已暂停。可以稍后主动继续。'));
 async function loadData(){
- try{const r=await fetch('./data/music.json');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
+ try{const r=await fetch('./data/music.json?v=2.1.2');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
   if(loaded.tracks.length!==3||loaded.tracks.some(t=>!t.src.startsWith('./media/')))throw Error('Invalid track data');
   data=loaded;displayTrack();retry.hidden=!audio.error;
  }catch(e){setStatus('选曲与歌词暂时未加载。默认歌曲仍可播放，请重试。');retry.hidden=false;}

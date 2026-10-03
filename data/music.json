@@ -7,7 +7,7 @@
       "artist": "Josh Woodward",
       "mood": "清爽电子流行",
       "description": "轻快一点，适合随意逛逛。",
-      "src": "./media/rebound.mp3",
+      "src": "./media/rebound.m4a",
       "sourceUrl": "https://www.joshwoodward.com/song/Rebound",
       "instrumental": false,
       "lyrics": [
@@ -204,7 +204,7 @@
       ],
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "duration": 174.035
+      "duration": 174.059
     },
     {
       "id": "california",
@@ -212,7 +212,7 @@
       "artist": "Josh Woodward",
       "mood": "暖一点的吉他人声",
       "description": "带一点夏天与回忆的感觉。",
-      "src": "./media/california-lullabye.mp3",
+      "src": "./media/california-lullabye.m4a",
       "sourceUrl": "https://www.joshwoodward.com/song/CaliforniaLullabye",
       "instrumental": false,
       "lyrics": [
@@ -414,7 +414,7 @@
       ],
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "duration": 253.793
+      "duration": 253.804
     },
     {
       "id": "childhood",
@@ -422,14 +422,19 @@
       "artist": "Scott Buckley",
       "mood": "安静钢琴 · 纯音乐",
       "description": "慢下来，留一点安静。",
-      "src": "./media/childhood.mp3",
+      "src": "./media/childhood.m4a",
       "sourceUrl": "https://www.scottbuckley.com.au/library/childhood/",
       "artistUrl": "https://www.scottbuckley.com.au",
       "instrumental": true,
       "lyrics": [],
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "duration": 137.079
+      "duration": 137.102
     }
-  ]
+  ],
+  "audioDelivery": {
+    "codec": "AAC-LC",
+    "bitrate": 96000,
+    "changes": "网页播放压缩，未剪辑或混音"
+  }
 }
