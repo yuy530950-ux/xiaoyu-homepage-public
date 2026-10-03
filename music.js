@@ -3,10 +3,12 @@
 const $=id=>document.getElementById(id),audio=$('site-audio');if(!audio)return;
 const widget=$('music-widget'),panel=$('music-panel'),expand=$('music-expand'),toggle=$('music-toggle'),dockToggle=$('dock-toggle'),progress=$('music-progress'),lyrics=$('lyrics'),list=$('lyrics-lines'),status=$('music-status'),retry=$('music-retry');
 const buttons=[...document.querySelectorAll('[data-track]')];
-let data=null,selected=0,lines=[],follow=true,pending=false,buffering=false,request=0,waitTimer,lastLine=-1,queuedSeek=null;
+let data=null,selected=0,lines=[],follow=true,pending=false,buffering=false,request=0,waitTimer,lastLine=-1,queuedSeek=null,usingBackup=false;
 const coarse=matchMedia('(pointer:coarse)').matches;
 audio.volume=coarse?1:.25;$('music-volume').value=audio.volume;
 const time=n=>Math.floor(Math.max(0,n)/60)+':'+String(Math.floor(Math.max(0,n)%60)).padStart(2,'0');
+const releasePrefix='https://github.com/yuy530950-ux/xiaoyu-homepage-public/releases/download/music-web-v2.1.2/';
+function safeSource(src){return /^\.\/media\/(rebound|california-lullabye|childhood)\.m4a$/.test(src)||['rebound.m4a','california-lullabye.m4a','childhood.m4a'].some(name=>src===releasePrefix+name);}
 const track=()=>data?.tracks[selected]||{title:'Rebound',artist:'Josh Woodward',mood:'清爽电子流行',duration:174.035,instrumental:false};
 function setStatus(text){status.textContent=text;}
 function open(){panel.hidden=false;expand.setAttribute('aria-expanded','true');$('music-close').focus({preventScroll:true});render(true);}
@@ -14,7 +16,7 @@ function close(){panel.hidden=true;expand.setAttribute('aria-expanded','false');
 expand.addEventListener('click',()=>panel.hidden?open():close());$('dock-open').addEventListener('click',()=>panel.hidden?open():close());$('music-close').addEventListener('click',close);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){e.preventDefault();close();}});
 function clearWait(){clearTimeout(waitTimer);}
-function watchWait(){clearWait();waitTimer=setTimeout(()=>{if(pending||buffering){setStatus('加载较慢，可以收起面板，稍后重试。');retry.hidden=false;}},8000);}
+function watchWait(){clearWait();waitTimer=setTimeout(()=>{if(pending||buffering){setStatus('加载较慢，可以收起面板，稍后重试。');retry.textContent=data?'换条线路重试':'重试';retry.hidden=false;}},8000);}
 function render(forceFollow=false){
  const current=audio.currentTime||0,t=track(),duration=Number.isFinite(audio.duration)?audio.duration:t.duration;
  const playing=!audio.paused&&!audio.ended&&!buffering;
@@ -49,7 +51,7 @@ audio.addEventListener('playing',()=>{pending=false;buffering=false;clearWait();
 audio.addEventListener('pause',()=>{buffering=false;render();});
 ['timeupdate','durationchange','seeked','ended','volumechange'].forEach(e=>audio.addEventListener(e,render));
 audio.addEventListener('waiting',()=>{buffering=true;setStatus('正在加载…');watchWait();render();});
-audio.addEventListener('error',()=>{request++;pending=false;buffering=false;clearWait();setStatus('这首歌暂时无法加载，请重试或换一首。');retry.hidden=false;render();});
+audio.addEventListener('error',()=>{request++;pending=false;buffering=false;clearWait();setStatus('这首歌暂时无法加载，请重试或换一首。');retry.textContent=data?'换条线路重试':'重试';retry.hidden=false;render();});
 function applySeek(){
  if(queuedSeek===null||audio.readyState<1||!Number.isFinite(audio.duration))return;
  const target=Math.min(Math.max(0,queuedSeek),audio.duration);
@@ -80,18 +82,22 @@ function displayTrack(){
 function choose(index){
  if(!data){setStatus('选曲正在加载，请稍后重试。');retry.hidden=false;return;}
  if(index===selected)return;
- const resume=!audio.paused||pending;queuedSeek=null;pause('已切换歌曲，点播放开始。');selected=index;
+ const resume=!audio.paused||pending;usingBackup=false;queuedSeek=null;pause('已切换歌曲，点播放开始。');selected=index;
  audio.src=track().src;audio.load();displayTrack();retry.hidden=true;
  if(resume)start();
 }
 buttons.forEach(b=>b.addEventListener('click',()=>choose(Number(b.dataset.track))));
 document.addEventListener('xiaoyu:chapter-media-start',()=>pause('作品开始播放，音乐已暂停。可以稍后主动继续。'));
 async function loadData(){
- try{const r=await fetch('./data/music.json?v=2.1.2');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
-  if(loaded.tracks.length!==3||loaded.tracks.some(t=>!t.src.startsWith('./media/')))throw Error('Invalid track data');
+ try{const r=await fetch('./data/music.json?v=2.1.3');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
+  if(loaded.tracks.length!==3||loaded.tracks.some(t=>!safeSource(t.src)||!safeSource(t.fallbackSrc)))throw Error('Invalid track data');
   data=loaded;displayTrack();retry.hidden=!audio.error;
  }catch(e){setStatus('选曲与歌词暂时未加载。默认歌曲仍可播放，请重试。');retry.hidden=false;}
 }
-retry.addEventListener('click',()=>{if(!data){loadData();return;}pause('重新加载中…');audio.load();start();});
+retry.addEventListener('click',()=>{
+ if(!data){loadData();return;}
+ const position=audio.currentTime||0;pause('正在换条线路加载…');usingBackup=!usingBackup;
+ audio.src=usingBackup?track().fallbackSrc:track().src;queuedSeek=position;audio.load();start();
+});
 loadData();render();
 })();
