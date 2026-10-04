@@ -3,3 +3,5 @@
 音乐：Rebound / California Lullabye（Josh Woodward）与 Childhood（Scott Buckley），均按作者 CC BY 4.0 许可署名使用。为网页播放压缩成 AAC，未剪辑或混音；完整许可与来源见 media/MUSIC-CREDITS.txt。
 两首人声提供作者歌词与按录音识别整理的逐句时间；个别句子可能存在少量同步偏差。Childhood 是纯音乐，没有歌词。
 本人照片、视频与小分身不附带开放素材许可。
+
+2026-10-04：首屏下方加入生日倒计时（2月10日）、开始尝试改变（2021-09-10）与开始尝试 AI（2026-07-05）的北京时间日历计数。
