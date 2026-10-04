@@ -57,7 +57,11 @@ function applySeek(){
  const target=Math.min(Math.max(0,queuedSeek),audio.duration);
  try{audio.currentTime=target;queuedSeek=null;render(true);}catch(e){/* metadata may still be changing */}
 }
-function seekTo(value){queuedSeek=value;applySeek();if(queuedSeek!==null)setStatus('正在加载，准备跳到 '+time(value)+'。');}
+function seekTo(value){
+ queuedSeek=value;
+ if(audio.readyState<1&&audio.preload==='none'&&audio.paused&&!pending){audio.preload='metadata';audio.load();}
+ applySeek();if(queuedSeek!==null)setStatus('正在加载，准备跳到 '+time(value)+'。');
+}
 audio.addEventListener('loadedmetadata',()=>{applySeek();render();});
 audio.addEventListener('canplay',applySeek);
 progress.addEventListener('input',()=>seekTo(Number(progress.value)));
@@ -83,7 +87,7 @@ function choose(index){
  if(!data){setStatus('选曲正在加载，请稍后重试。');retry.hidden=false;return;}
  if(index===selected)return;
  const resume=!audio.paused||pending;usingBackup=false;queuedSeek=null;pause('已切换歌曲，点播放开始。');selected=index;
- audio.src=track().src;audio.load();displayTrack();retry.hidden=true;
+ audio.preload='none';audio.src=track().src;audio.load();displayTrack();retry.hidden=true;
  if(resume)start();
 }
 buttons.forEach(b=>b.addEventListener('click',()=>choose(Number(b.dataset.track))));
