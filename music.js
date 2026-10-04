@@ -55,7 +55,7 @@ audio.addEventListener('error',()=>{request++;pending=false;buffering=false;clea
 function applySeek(){
  if(queuedSeek===null||audio.readyState<1||!Number.isFinite(audio.duration))return;
  const target=Math.min(Math.max(0,queuedSeek),audio.duration);
- try{audio.currentTime=target;queuedSeek=null;render(true);}catch(e){/* metadata may still be changing */}
+ try{audio.currentTime=target;queuedSeek=null;setStatus('已跳到 '+time(target)+'。');render(true);}catch(e){/* metadata may still be changing */}
 }
 function seekTo(value){
  queuedSeek=value;
