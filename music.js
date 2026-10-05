@@ -2,7 +2,7 @@
 'use strict';
 const $=id=>document.getElementById(id),audio=$('site-audio');if(!audio)return;
 const widget=$('music-widget'),panel=$('music-panel'),expand=$('music-expand'),toggle=$('music-toggle'),dockToggle=$('dock-toggle'),progress=$('music-progress'),lyrics=$('lyrics'),list=$('lyrics-lines'),status=$('music-status'),retry=$('music-retry');
-const buttons=[...document.querySelectorAll('[data-track]')];
+const buttons=[...document.querySelectorAll('[data-track]')],heroToggle=$('hero-music-toggle');
 let data=null,selected=0,lines=[],follow=true,pending=false,buffering=false,request=0,waitTimer,lastLine=-1,queuedSeek=null,usingBackup=false;
 const coarse=matchMedia('(pointer:coarse)').matches;
 audio.volume=coarse?1:.25;$('music-volume').value=audio.volume;
@@ -25,6 +25,7 @@ function render(forceFollow=false){
  const label=pending?'取消加载':!audio.paused?'暂停 '+t.title:'播放 '+t.title;
  toggle.setAttribute('aria-label',label);dockToggle.setAttribute('aria-label',label);
  dockToggle.textContent=pending?'■':!audio.paused?'Ⅱ':'▶';
+ if(heroToggle){heroToggle.textContent=pending?'取消等待':!audio.paused?'Ⅱ 暂停音乐':'▶ 听点音乐';heroToggle.setAttribute('aria-label',label);}
  $('music-current').textContent=time(current);$('music-duration').textContent=time(duration);
  progress.max=duration;progress.value=current;progress.disabled=!Number.isFinite(audio.duration);
  progress.setAttribute('aria-valuetext',time(current)+' / '+time(duration));
@@ -46,6 +47,7 @@ async function start(){
 }
 function playPause(){if(pending||!audio.paused)pause();else start();}
 toggle.addEventListener('click',playPause);dockToggle.addEventListener('click',playPause);
+if(heroToggle)heroToggle.addEventListener('click',playPause);
 audio.addEventListener('play',()=>{document.dispatchEvent(new Event('xiaoyu:soundtrack-start'));render();});
 audio.addEventListener('playing',()=>{pending=false;buffering=false;clearWait();retry.hidden=true;setStatus('正在播放 '+track().title+'。收起面板也会继续。');render();});
 audio.addEventListener('pause',()=>{buffering=false;render();});
