@@ -1,14 +1,14 @@
 /* Homepage entry points and distinct, continuously visible record sections. */
 .home-clarity .site-nav{font-size:15px;gap:24px}
-.home-clarity .hero{padding:48px 0 40px}
+.home-clarity .hero{padding:32px 0 40px}
 .hero-intro{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:55px;align-items:center}
-.home-clarity .hero h1{font-size:clamp(44px,5.4vw,68px);margin-top:15px;letter-spacing:-.035em}
-.home-clarity .hero-lead{font-size:17px;margin-top:22px}
-.home-clarity .hero-actions{gap:12px;margin-top:22px;align-items:center}
+.home-clarity .hero h1{font-size:clamp(44px,5.4vw,60px);margin-top:12px;letter-spacing:-.035em}
+.home-clarity .hero-lead{font-size:17px;margin-top:16px}
+.home-clarity .hero-actions{gap:12px;margin-top:16px;align-items:center}
 .home-clarity .hero-actions .button{font-size:15px;padding:9px 16px;min-height:46px}
 .home-clarity .hero-photo{width:100%;margin:0}
 .home-clarity .hero-photo figcaption{text-align:left}
-.hero-now{margin-top:34px}
+.hero-now{margin-top:20px}
 .hero-now>h2{font-family:inherit;font-size:16px;font-weight:600;line-height:1.6;margin-bottom:13px}
 .now-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .now-links>a{border:1px solid #b9beb1;border-radius:4px;padding:16px 19px;background:#fffdf7;display:grid;gap:5px;min-height:125px}
