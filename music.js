@@ -95,7 +95,7 @@ function choose(index){
 buttons.forEach(b=>b.addEventListener('click',()=>choose(Number(b.dataset.track))));
 document.addEventListener('xiaoyu:chapter-media-start',()=>pause('作品开始播放，音乐已暂停。可以稍后主动继续。'));
 async function loadData(){
- try{const r=await fetch('./data/music.json?v=2.1.3');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
+ try{const r=await fetch('./data/music.json?v=2026-10-09-same-origin');if(!r.ok)throw Error('Track data unavailable');const loaded=await r.json();
   if(loaded.tracks.length!==3||loaded.tracks.some(t=>!safeSource(t.src)||!safeSource(t.fallbackSrc)))throw Error('Invalid track data');
   data=loaded;displayTrack();retry.hidden=!audio.error;
  }catch(e){setStatus('选曲与歌词暂时未加载。默认歌曲仍可播放，请重试。');retry.hidden=false;}
